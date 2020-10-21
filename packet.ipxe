@@ -1,6 +1,6 @@
 #!ipxe
 
-set base-url https://stable.release.flatcar-linux.net/amd64-usr/current
+set base-url https://stable.release.flatcar-linux.net/amd64-usr/2605.5.0
 kernel ${base-url}/flatcar_production_pxe.vmlinuz initrd=flatcar_production_pxe_image.cpio.gz flatcar.first_boot=1 flatcar.oem.id=packet console=ttyS1,115200n8 flatcar.autologin
 initrd ${base-url}/flatcar_production_pxe_image.cpio.gz
 boot
